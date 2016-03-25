@@ -1,0 +1,3 @@
+.page:last-child i.fa-angle-down {  /* there are no more pages to display */
+    display: none;
+}
