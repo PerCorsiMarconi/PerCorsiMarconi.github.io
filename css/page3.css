@@ -1,0 +1,33 @@
+.page:nth-child(3) {
+    background-color: #339633;
+}
+
+.page:nth-child(3) > #vertical-bar {
+    float: left;
+    display: inline-block;
+    font-size: 20px;
+    height: 3em;
+    width: 1px;
+    border-right: 2px solid #555;
+    /* padding: 3em 0; */
+    margin: 3em 1em 0 5em;
+
+}
+
+.page:nth-child(3) > h2 {
+    float: left;
+    width: 25%;
+    font-size: 20px;
+    padding: 3em 0;
+}
+
+.page:nth-child(3) > #bill {
+    display: inline-block;
+    background-color: #1C541C;
+    height: 25vh;
+    width: 60vh;
+    padding: 3em;
+
+    margin: 10em auto;
+    font-size: 16px;
+}
