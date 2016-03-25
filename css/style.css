@@ -1,0 +1,20 @@
+body {
+    overflow-x: hidden;
+}
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f2f2f2;
+}
+
+i.fa-angle-down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    display: block;
+    font-size: 2em;
+}
+
