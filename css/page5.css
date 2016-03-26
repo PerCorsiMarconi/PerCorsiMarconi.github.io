@@ -1,0 +1,55 @@
+.page:nth-child(5) {
+}
+
+
+.page:nth-child(5) > div {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+.page:nth-child(5) > div p {
+    position: absolute;
+    color: #555;
+    font-size: 20px;
+    width: 60%;
+    left: 20%;
+    text-align: justify;
+}
+
+.page:nth-child(5) > div.left  p{
+    bottom: 3em;
+    top: auto;
+}
+
+.page:nth-child(5) > div p {
+    top: 3em;
+}
+
+.page:nth-child(5) > div:nth-child(2) {
+    background-color: #FFC0CB;
+}
+
+.pig {
+    position: absolute;
+    left: 15%;
+
+    width: 70%;
+    height: 35%;
+
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}
+
+
+.page:nth-child(5) > div:nth-child(2) > .pig {
+    bottom: 3em;
+}
+
+
+.page:nth-child(5) > div:first-child > .pig {
+    background-color: #FFC0CB;
+    top: 3em;
+}
