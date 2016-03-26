@@ -42,7 +42,7 @@
 }
 
 
-.page:nth-child(3) > #bill > img, p {
+.page:nth-child(3) > #bill > img, #bill > p {
 	position: absolute;
 	top: 0;
 	left: 0;
