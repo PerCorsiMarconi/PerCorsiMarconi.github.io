@@ -31,25 +31,20 @@
     background-color: #FFC0CB;
 }
 
-.pig {
-    position: absolute;
+img.pig {
+	position: absolute;
     left: 15%;
 
     width: 70%;
-    height: 35%;
+    /*height: 35%;*/
 
     margin: 0 auto;
-    background-color: #f5f5f5;
-    border-radius: 50%;
 }
 
-
-.page:nth-child(5) > div:nth-child(2) > .pig {
+.page:nth-child(5) > div:nth-child(2) > img.pig {
     bottom: 3em;
 }
 
-
-.page:nth-child(5) > div:first-child > .pig {
-    background-color: #FFC0CB;
+.page:nth-child(5) > div:first-child > img.pig {
     top: 3em;
 }
