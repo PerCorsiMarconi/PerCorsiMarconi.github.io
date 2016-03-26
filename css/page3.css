@@ -3,6 +3,10 @@
 }
 
 .page:nth-child(3) #background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
 	width: 100%;
 }
 
@@ -26,12 +30,28 @@
 }
 
 .page:nth-child(3) > #bill {
+	position: relative;
+	z-index: 1;
     display: inline-block;
-    background-color: #1C541C;
     height: 25vh;
     width: 60vh;
-    padding: 3em;
 
     margin: 10em auto;
     font-size: 16px;
+	transform: rotate(0.05turn);
+}
+
+
+.page:nth-child(3) > #bill > img, p {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#bill > p {
+	width: 85%;
+	text-align: justify;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
 }
