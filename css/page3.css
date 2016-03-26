@@ -2,6 +2,10 @@
     background-color: #339633;
 }
 
+.page:nth-child(3) #background {
+	width: 100%;
+}
+
 .page:nth-child(3) > #vertical-bar {
     float: left;
     display: inline-block;
