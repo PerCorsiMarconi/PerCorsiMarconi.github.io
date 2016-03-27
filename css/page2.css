@@ -14,7 +14,8 @@
     width: 60vh;
     margin: 20vh auto;
     border-radius: 50%;
-    border: 2px solid #ccc
+    border: 2px solid #ccc;
+}
 
 #two > aside {
     display: flex;
