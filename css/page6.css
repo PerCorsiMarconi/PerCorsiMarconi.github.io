@@ -1,0 +1,32 @@
+.page:nth-child(6) {
+  border-radius: 3em;
+  background-color: #b00;
+}
+
+.page:nth-child(6) #magnetic-band {
+	
+	width: 100%;
+	height: 5.5em;
+	background-color: black;
+	
+	position: absolute;
+	top: 4em;
+  
+}
+
+.page:nth-child(6) .video {
+    position: absolute;
+	bottom: 3em;
+	right: 3em;
+}
+
+.page:nth-child(6) > .wrapper {
+    width: 60%;
+}
+.page:nth-child(6) p {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 30%;
+	font-size: 20px;
+	text-align: justify;
+}
