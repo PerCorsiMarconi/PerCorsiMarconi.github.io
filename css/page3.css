@@ -1,8 +1,8 @@
-.page:nth-child(3) {
+.page#3 {
     background-color: #339633;
 }
 
-.page:nth-child(3) #background {
+.page#3 #background {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -10,7 +10,7 @@
 	width: 100%;
 }
 
-.page:nth-child(3) > #vertical-bar {
+.page#3 > #vertical-bar {
     float: left;
     display: inline-block;
     font-size: 20px;
@@ -22,14 +22,14 @@
 
 }
 
-.page:nth-child(3) > h2 {
+.page#3 > h2 {
     float: left;
     width: 25%;
     font-size: 20px;
     padding: 3em 0;
 }
 
-.page:nth-child(3) > #bill {
+.page#3 > #bill {
 	position: relative;
 	z-index: 1;
     display: inline-block;
@@ -42,7 +42,7 @@
 }
 
 
-.page:nth-child(3) > #bill > img, #bill > p {
+.page#3 > #bill > img, #bill > p {
 	position: absolute;
 	top: 0;
 	left: 0;

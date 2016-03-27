@@ -1,14 +1,14 @@
-.page:nth-child(2) {
+.page#2 {
     background-color: #006399;
 }
 
-.page:nth-child(2) > div {
+.page#2 > div {
     width: 70%;
     height: 100vh;
     float: left;
 }
 
-.page:nth-child(2) #planet {
+.page#2 #planet {
     /* background-color: blue; */
     height: 60vh;
     width: 60vh;
@@ -17,7 +17,7 @@
     border: 2px solid #ccc;
 }
 
-.page:nth-child(2) > aside {
+.page#2 > aside {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -26,7 +26,7 @@
     height: 100vh;
 }
 
-.page:nth-child(2) > aside p {
+.page#2 > aside p {
     font-family: Raleway;
     font-weight: 100;
     color: #f5f5f5;

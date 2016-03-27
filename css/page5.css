@@ -1,15 +1,15 @@
-.page:nth-child(5) {
+.page#5 {
 }
 
 
-.page:nth-child(5) > div {
+.page#5 > div {
     position: relative;
     width: 50%;
     height: 100vh;
     float: left;
 }
 
-.page:nth-child(5) > div p {
+.page#5 > div p {
     position: absolute;
     color: #555;
     font-size: 20px;
@@ -18,16 +18,16 @@
     text-align: justify;
 }
 
-.page:nth-child(5) > div.left  p{
+.page#5 > div.left  p{
     bottom: 3em;
     top: auto;
 }
 
-.page:nth-child(5) > div p {
+.page#5 > div p {
     top: 3em;
 }
 
-.page:nth-child(5) > div:nth-child(2) {
+.page#5 > div:nth-child(2) {
     background-color: #FFC0CB;
 }
 
@@ -41,10 +41,10 @@ img.pig {
     margin: 0 auto;
 }
 
-.page:nth-child(5) > div:nth-child(2) > img.pig {
+.page#5 > div:nth-child(2) > img.pig {
     bottom: 3em;
 }
 
-.page:nth-child(5) > div:first-child > img.pig {
+.page#5 > div:first-child > img.pig {
     top: 3em;
 }
