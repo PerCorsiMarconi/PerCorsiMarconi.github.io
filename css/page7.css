@@ -1,18 +1,18 @@
-.page:last-child i.fa-angle-down {  /* there are no more pages to display */
+.page#7 i.fa-angle-down {  /* there are no more pages to display */
     display: none;
 }
 
-.page:last-child {
+.page#7 {
     background-color: #3AAD3A;
 }
 
-.page:last-child h1 {
+.page#7 h1 {
     padding: 2em 0 1em 2em;
     font-style: italic;
     color: #f5f5f5;
 }
 
-.page:last-child p {
+.page#7 p {
     width: 70%;
     margin: 0 auto;
     font-family: 'Poiret One';
