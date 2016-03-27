@@ -1,8 +1,8 @@
-.page#3 {
+#three {
     background-color: #339633;
 }
 
-.page#3 #background {
+#three #background {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -10,7 +10,7 @@
 	width: 100%;
 }
 
-.page#3 > #vertical-bar {
+#three > #vertical-bar {
     float: left;
     display: inline-block;
     font-size: 20px;
@@ -22,14 +22,14 @@
 
 }
 
-.page#3 > h2 {
+#three > h2 {
     float: left;
     width: 25%;
     font-size: 20px;
     padding: 3em 0;
 }
 
-.page#3 > #bill {
+#three > #bill {
 	position: relative;
 	z-index: 1;
     display: inline-block;
@@ -42,7 +42,7 @@
 }
 
 
-.page#3 > #bill > img, #bill > p {
+#three > #bill > img, #bill > p {
 	position: absolute;
 	top: 0;
 	left: 0;

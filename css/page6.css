@@ -1,9 +1,9 @@
-.page#6 {
+#six {
   border-radius: 3em;
   background-color: #b00;
 }
 
-.page#6 #magnetic-band {
+#six #magnetic-band {
 	
 	width: 100%;
 	height: 5.5em;
@@ -14,16 +14,16 @@
   
 }
 
-.page#6 .video {
+#six .video {
     position: absolute;
 	bottom: 3em;
 	right: 3em;
 }
 
-.page#6 > .wrapper {
+#six > .wrapper {
     width: 60%;
 }
-.page#6 p {
+#six p {
 	width: 70%;
 	margin: 0 auto;
 	padding-top: 30%;

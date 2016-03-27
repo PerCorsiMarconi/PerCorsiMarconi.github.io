@@ -1,15 +1,15 @@
-.page#5 {
+#five {
 }
 
 
-.page#5 > div {
+#five > div {
     position: relative;
     width: 50%;
     height: 100vh;
     float: left;
 }
 
-.page#5 > div p {
+#five > div p {
     position: absolute;
     color: #555;
     font-size: 20px;
@@ -18,16 +18,16 @@
     text-align: justify;
 }
 
-.page#5 > div.left  p{
+#five > div.left  p{
     bottom: 3em;
     top: auto;
 }
 
-.page#5 > div p {
+#five > div p {
     top: 3em;
 }
 
-.page#5 > div:nth-child(2) {
+#five > div:nth-child(2) {
     background-color: #FFC0CB;
 }
 
@@ -41,10 +41,10 @@ img.pig {
     margin: 0 auto;
 }
 
-.page#5 > div:nth-child(2) > img.pig {
+#five > div:nth-child(2) > img.pig {
     bottom: 3em;
 }
 
-.page#5 > div:first-child > img.pig {
+#five > div:first-child > img.pig {
     top: 3em;
 }

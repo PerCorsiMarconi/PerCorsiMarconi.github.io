@@ -1,23 +1,22 @@
-.page#2 {
+#two {
     background-color: #006399;
 }
 
-.page#2 > div {
+#two > div {
     width: 70%;
     height: 100vh;
     float: left;
 }
 
-.page#2 #planet {
+#two #planet {
     /* background-color: blue; */
     height: 60vh;
     width: 60vh;
     margin: 20vh auto;
     border-radius: 50%;
-    border: 2px solid #ccc;
-}
+    border: 2px solid #ccc
 
-.page#2 > aside {
+#two > aside {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -26,7 +25,7 @@
     height: 100vh;
 }
 
-.page#2 > aside p {
+#two > aside p {
     font-family: Raleway;
     font-weight: 100;
     color: #f5f5f5;
