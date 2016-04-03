@@ -41,3 +41,11 @@ div.video h3 {
 	text-align: center;
 	line-height: 18vw;
 }
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
