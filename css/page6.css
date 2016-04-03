@@ -1,10 +1,10 @@
 #six {
   border-radius: 3em;
   background-color: #b00;
+  transition: 0.1s linear;
 }
 
 #six #magnetic-band {
-	
 	width: 100%;
 	height: 5.5em;
 	background-color: black;

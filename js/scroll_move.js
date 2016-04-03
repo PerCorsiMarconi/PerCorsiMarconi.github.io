@@ -14,11 +14,14 @@ function main() {
             var toBe = map(pos, 0, height, 100, 20);
             document.getElementById("sheet").style.marginTop = "" + toBe + "vh";
         } else if (top >= height * 0 && top <= height * 1) {
-            console.log("l");
             var pos = top;
             var toBe = map(pos, 0, height, 0, 360);
-            console.log(toBe);
             document.getElementById("planet").style.transform = "rotate(" + toBe + "deg)";
+        } else if (top >= height * 4 && top <= height * 5) {
+            var pos = top - height * 4;
+            var toBe = map(pos, 0, height, 100, 0);
+            console.log(toBe);
+            document.getElementById("six").style.left= "" + toBe + "%";
         }
     };
 
