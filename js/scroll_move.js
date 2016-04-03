@@ -13,6 +13,13 @@ function main() {
             var pos = top - height * 2;
             var toBe = map(pos, 0, height, 100, 20);
             document.getElementById("sheet").style.marginTop = "" + toBe + "vh";
+        } else if (top >= height * 1 && top <= height * 2) {
+            var pos = top - height * 1;
+            var toBe = map(pos, 0, height, 0, 50);
+            document.getElementById("bill").style.marginLeft= "" + toBe + "%";
+            var toBe = map(pos, 0, height, 0, 370);
+            document.getElementById("bill").style.transform = 
+                "translate(-50%, -50%) rotate(" + toBe + "deg)";
         } else if (top >= height * 0 && top <= height * 1) {
             var pos = top;
             var toBe = map(pos, 0, height, 0, 360);
