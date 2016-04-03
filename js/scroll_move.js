@@ -17,10 +17,9 @@ function main() {
             var pos = top;
             var toBe = map(pos, 0, height, 0, 360);
             document.getElementById("planet").style.transform = "rotate(" + toBe + "deg)";
-        } else if (top >= height * 4 && top <= height * 5) {
+        } else if (top >= height * 4) {
             var pos = top - height * 4;
             var toBe = map(pos, 0, height, 100, 0);
-            console.log(toBe);
             document.getElementById("six").style.left= "" + toBe + "%";
         }
     };
