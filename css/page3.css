@@ -3,11 +3,11 @@
 }
 
 #three #background {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 0;
-	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
 }
 
 #three > #vertical-bar {
@@ -30,30 +30,30 @@
 }
 
 #three > #bill {
-	position: relative;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
     display: inline-block;
     height: 25vh;
     width: 60vh;
 
     margin: 10em auto;
     font-size: 16px;
-	transform: rotate(0.05turn);
+    transform: rotate(0.05turn);
     border: 2px solid black;
     background-color: #070;
 }
 
 
 #three > #bill > img, #bill > p {
-	position: absolute;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #bill > p {
-	width: 85%;
-	text-align: justify;
-	top: 50%;
-	left: 50%;
-	transform: translateY(-50%) translateX(-50%);
+    width: 85%;
+    text-align: justify;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
 }
