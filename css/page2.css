@@ -8,13 +8,19 @@
     float: left;
 }
 
-#two #planet {
+#two #planet{
     /* background-color: blue; */
-    height: 60vh;
-    width: 60vh;
-    margin: 20vh auto;
-    border-radius: 50%;
-    border: 2px solid #ccc;
+    /* height: 70vh; */
+    width: 80vh;
+    margin: 10vh auto;
+}
+
+
+#two #planet img{
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    /* margin: 15vh auto; */
 }
 
 #two > aside {
