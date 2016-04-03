@@ -3,11 +3,72 @@ function map(x, in_min, in_max, out_min, out_max)
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;  
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+
+
+function disableScroll() {
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+}
+
+function enableScroll() {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null; 
+    window.onwheel = null; 
+    window.ontouchmove = null;  
+    document.onkeydown = null;  
+}
+
+function my_smoothScroll() {
+    window.canAnimateScroll = false;
+    var doc = document.documentElement;
+    var height = window.innerHeight;
+    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+    var current = Math.ceil(top / height);
+    if (top < window.scrolled)
+        current--;
+    var l = ["one", "two", "three", "four", "five", "six", "seven"];
+    var toGo = l[current];
+    console.log(toGo);
+    smoothScroll.animateScroll('#' + toGo, null, {"speed": 500, callback: function() {
+        window.canAnimateScroll = true;
+        window.scrolled = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+        enableScroll();
+    }});
+}
+
 function main() {
     var doc = document.documentElement;
     var height = window.innerHeight;
-    window.onscroll = function() {
+    window. canAnimateScroll = true;
+    window.onscroll = function(e) {
         var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+        if (window.canAnimateScroll) {
+            disableScroll();
+            my_smoothScroll();
+        }
         // sheet at page 3
         if (top >= height * 2 && top <= height * 3) {
             var pos = top - height * 2;
