@@ -13,6 +13,7 @@
     /* height: 70vh; */
     width: 80vh;
     margin: 10vh auto;
+    transition: 0.1s ease-in-out;
 }
 
 
