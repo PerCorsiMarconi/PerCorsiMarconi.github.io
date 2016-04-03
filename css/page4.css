@@ -19,6 +19,70 @@
 	box-shadow: 0 0 10px #999;
 }
 
+#four .wrapper > h1 {
+    width: 50%;
+    margin-left: 10%;
+    text-align: center;
+    color: #333;
+    font-family: "The Girl Next Door";
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+#sheet * {
+    font-family: "Indie Flower";
+}
+
+#sheet h1 {
+    padding: 0.5em;
+    color: #333;
+}
+
+#sheet h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#sheet h2.entrate {
+    color: #060;
+}
+
+#sheet h2.uscite{
+    color: #600;
+}
+
+#sheet table {
+    width: 80%;
+    margin: auto;
+}
+
+#sheet table * {
+    font-size: 24px;
+    color: #333;
+}
+
+#sheet th, td {
+    text-align: center;
+}
+
+#sheet tr:first-child {
+    border-bottom: 1px solid #333;
+    margin-bottom: 1em;
+}
+
+#sheet td:first-child {
+    text-align: left;
+}
+
+#sheet table.entrate tr:not(:first-child) td:last-child {
+    color: #060;
+}
+
+#sheet table.uscite tr:not(:first-child) td:last-child {
+    color: #600;
+}
+
 /*#four #sheet {
 	height: 85%;
 	width: 50%;

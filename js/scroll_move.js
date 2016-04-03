@@ -11,7 +11,7 @@ function main() {
         // console.log(top);
         if (top >= height * 2 && top <= height * 3) {
             var pos = top - height * 2;
-            var toBe = map(pos, 0, height, 100, 15);
+            var toBe = map(pos, 0, height, 100, 20);
             document.getElementById("sheet").style.marginTop = "" + toBe + "vh";
         }
     };
