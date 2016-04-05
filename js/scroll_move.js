@@ -76,23 +76,22 @@ function main() {
         if (window.canAnimateScroll) {
             my_smoothScroll();
         }
-        // sheet at page 3
-        if (top >= height * 1 && top <= height * 4) {
+        if (top >= height * 0 && top <= height * 1) { // planet
+            var pos = top;
+            var toBe = map(pos, 0, height, 0, 360);
+            document.getElementById("planet").style.transform = "rotate(" + toBe + "deg)";
+        } else if (top >= height * 1 && top <= height * 2) { //sheet
             var pos = top - height * 1;
             var toBe = map(pos, 0, height, 100, 20);
             document.getElementById("sheet").style.marginTop = "" + toBe + "vh";
-        } else if (top >= height * 1 && top <= height * 2) {
-            var pos = top - height * 1;
+        } else if (top >= height * 3 && top <= height * 4) { // bill
+            var pos = top - height * 3;
             var toBe = map(pos, 0, height, 0, 50);
             document.getElementById("bill").style.marginLeft= "" + toBe + "%";
             var toBe = map(pos, 0, height, 0, 370);
             document.getElementById("bill").style.transform = 
                 "translate(-50%, -50%) rotate(" + toBe + "deg)";
-        } else if (top >= height * 0 && top <= height * 1) {
-            var pos = top;
-            var toBe = map(pos, 0, height, 0, 360);
-            document.getElementById("planet").style.transform = "rotate(" + toBe + "deg)";
-        } else if (top >= height * 5) {  // credit card
+        } else if (top >= height * 5 && top <= height * 7) {  // credit card
             var pos = top - height * 5;
             var toBe = map(pos, 0, height, 100, 0);
             document.getElementById("six").style.left= "" + toBe + "%";
