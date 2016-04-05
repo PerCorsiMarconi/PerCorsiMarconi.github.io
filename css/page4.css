@@ -1,32 +1,45 @@
 #four {
-	background-color: #e69;
+	/* background-color: #e69; */
+	height: 200vh;
+    background-image: url(../assets/triangle.svg);
+    background-size: 100vw;
+}
+
+#white-triangle {
+    display: none;
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #four .wrapper {
-	width: 100%;
-	height: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: block;
 }
 
 #four #sheet {
-	height: 85%;
+	height: 80%;
 	width: 50%;
 	
 	display: inline-block;
 	
 	margin-left: 10%;
-	margin-top: 100vh;
+	margin-top: 20vh;
 	background-color: #f5f5f5;
 	box-shadow: 0 0 10px #999;
 }
 
-#four .wrapper > h1 {
+#four #wrapper-1 > h1 {
     width: 50%;
     margin-left: 10%;
     text-align: center;
     color: #333;
     font-family: "The Girl Next Door";
     position: absolute;
-    top: 10%;
+    top: 5%;
     transform: translateY(-50%);
 }
 
@@ -93,7 +106,7 @@
 	box-shadow: 0 0 10px #999;
 }*/
 
-#four p {
+#four #wrapper-1 p {
 	float: right;
 	text-align: justify;
     width: 30%;
@@ -102,6 +115,6 @@
 
 #four .video {
 	position: absolute;
-	bottom: 7vh;
+	bottom: 107vh;
 	right: 5%;
 }

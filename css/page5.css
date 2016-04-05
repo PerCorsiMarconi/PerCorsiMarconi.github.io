@@ -1,34 +1,33 @@
-#five {
-}
 
-
-#five > div {
+#wrapper-2 > div {
     position: relative;
     width: 50%;
     height: 100vh;
     float: left;
 }
 
-#five > div p {
+#wrapper-2 > div p {
     position: absolute;
     color: #555;
     font-size: 20px;
     width: 60%;
-    left: 20%;
     text-align: justify;
+    right: 10%;
 }
 
-#five > div.left  p{
-    bottom: 3em;
-    top: auto;
-}
-
-#five > div p {
+#wrapper-2 > div.left  p{
+    left: 10%;
+    right: auto;
     top: 3em;
+    bottom: auto;
 }
 
-#five > div:nth-child(2) {
-    background-color: #FFC0CB;
+#wrapper-2 > div p {
+    bottom: 3em;
+}
+
+#wrapper-2 > div:nth-child(2) {
+    /* background-color: #FFC0CB; */
 }
 
 img.pig {
@@ -41,10 +40,10 @@ img.pig {
     margin: 0 auto;
 }
 
-#five > div:nth-child(2) > img.pig {
-    bottom: 3em;
+#wrapper-2 > div:nth-child(2) > img.pig {
+    top: 3em;
 }
 
-#five > div:first-child > img.pig {
-    top: 3em;
+#wrapper-2 > div:first-child > img.pig {
+    bottom: 3em;
 }
