@@ -1,4 +1,25 @@
 #one {
-    background-color: #FFA426;
+    background-color: #B55EC6;
+}
+
+#one h1 {
+    font-family: "Amatic SC";
+    text-align: center;
+    font-size: 60px;
+    padding: 0.3em;
+}
+
+#one img#logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+    /* transform: rotate(-2deg); */
+}
+
+#one h2 {
+    font-family: "Shadows Into Light Two";
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0.4em;
 }
 
