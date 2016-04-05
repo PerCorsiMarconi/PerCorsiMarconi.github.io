@@ -1,7 +1,7 @@
 #eight {
     display: flex;
     align-items: flex-center;
-    background-color: #00B9BC;
+    background-color: #69e;
 }
 
 #eight p {
@@ -10,7 +10,7 @@
     text-align: justify;
     margin: auto 5vw;
     float: left;
-    color: #555;
+    color: #000;
 }
 
 #eight > #bank {
