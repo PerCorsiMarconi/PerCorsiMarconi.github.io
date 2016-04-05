@@ -44,7 +44,7 @@ function enableScroll() {
 function my_smoothScroll() {
     var doc = document.documentElement;
     var height = window.innerHeight;
-    var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+   var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
     var current = Math.ceil(top / height);
     if (top < window.scrolled)
         current--;
@@ -54,7 +54,7 @@ function my_smoothScroll() {
     if ((current === 4 && direction) || (current === 5 && direction && (current * height - top) > (height * 5/6))){ 
         return;
     }
-    var l = ["one", "two", "three", "four", "four", "six", "seven"];
+    var l = ["one", "two", "three", "four", "four", "eight", "six", "seven"];
     var toGo = l[current];
     console.log(toGo);
     disableScroll();
@@ -92,8 +92,8 @@ function main() {
             var pos = top;
             var toBe = map(pos, 0, height, 0, 360);
             document.getElementById("planet").style.transform = "rotate(" + toBe + "deg)";
-        } else if (top >= height * 4) {
-            var pos = top - height * 4;
+        } else if (top >= height * 5) {  // credit card
+            var pos = top - height * 5;
             var toBe = map(pos, 0, height, 100, 0);
             document.getElementById("six").style.left= "" + toBe + "%";
         }
