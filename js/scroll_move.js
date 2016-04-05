@@ -51,10 +51,10 @@ function my_smoothScroll() {
     var direction = (top > window.scrolled); // down = true, up = false
     console.log(current);
     console.log("c*h ", (current) * height, "top ", top, "-", current * height - top);
-    if ((current === 4 && direction) || (current === 5 && direction && (current * height - top) > (height * 5/6))){ 
+    if ((current === 3 && direction) || (current === 4 && direction && (current * height - top) > (height * 5/6))){ 
         return;
     }
-    var l = ["one", "two", "three", "four", "four", "eight", "six", "seven"];
+    var l = ["one", "two", "four", "four", "three", "eight", "six", "seven"];
     var toGo = l[current];
     console.log(toGo);
     disableScroll();
@@ -77,8 +77,8 @@ function main() {
             my_smoothScroll();
         }
         // sheet at page 3
-        if (top >= height * 2 && top <= height * 3) {
-            var pos = top - height * 2;
+        if (top >= height * 1 && top <= height * 4) {
+            var pos = top - height * 1;
             var toBe = map(pos, 0, height, 100, 20);
             document.getElementById("sheet").style.marginTop = "" + toBe + "vh";
         } else if (top >= height * 1 && top <= height * 2) {
