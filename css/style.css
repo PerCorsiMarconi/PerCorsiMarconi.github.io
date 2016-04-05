@@ -49,3 +49,8 @@ div.video h3 {
     clear: both;
     visibility: hidden;
 }
+
+.video {
+    width: 30vw;
+    height: 34vh;
+}
