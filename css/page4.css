@@ -54,7 +54,7 @@
     width: 50%;
     margin-left: 10%;
     text-align: center;
-    color: #333;
+    color: #111;
     font-family: "The Girl Next Door";
     position: absolute;
     top: 5%;
@@ -125,10 +125,15 @@
 }*/
 
 #four #wrapper-1 p {
+	font-family: "Indie Flower";
+	line-height: 1.25em;
+	font-size: 27px;
+	
+	color: #111;
 	float: right;
 	text-align: justify;
     width: 30%;
-	margin: 20vh 5% auto;
+	margin: 25vh 5% auto;
 }
 
 #four .video {

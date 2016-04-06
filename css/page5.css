@@ -7,9 +7,12 @@
 }
 
 #wrapper-2 > div p {
+	font-family: "Indie Flower";
+	line-height: 1.1em;
     position: absolute;
+	font-size: 25px;
     color: #555;
-    font-size: 20px;
+    
     width: 60%;
     text-align: justify;
     right: 10%;
@@ -18,12 +21,14 @@
 #wrapper-2 > div.left  p{
     left: 10%;
     right: auto;
-    top: 3em;
+    top: 4.5em;
     bottom: auto;
 }
 
 #wrapper-2 > div p {
-    bottom: 3em;
+	color: #111;
+	line-height: 1.25em;
+    bottom: 4.5em;
 }
 
 #wrapper-2 > div:nth-child(2) {

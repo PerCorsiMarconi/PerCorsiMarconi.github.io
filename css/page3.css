@@ -56,6 +56,10 @@
 }
 
 #bill > p {
+	font-family: Calligraffitti;
+	font-size: 20px;
+	line-height: 1.2em;
+	color: #ddd;
     float: left;
     width: 85%;
     text-align: justify;
