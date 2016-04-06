@@ -1,20 +1,38 @@
 #four {
-	/* background-color: #e69; */
+	background-color: #e69;
 	height: 200vh;
-    background-image: url(../assets/triangle.svg);
-    background-size: 100vw;
+    /* background-image: url(../assets/triangle.svg);
+    background-size: 100vw; */
+	z-index: -200;
+}
+
+#four * {
+    z-index: 100;
 }
 
 #white-triangle {
     display: none;
     height: 200vh;
-    width: 100vw;
+    width: 66vw;
     position: absolute;
     top: 0;
     left: 0;
 }
 
+#four #white-triangle-two {
+	z-index: -100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 200vh 0 0 66vw;
+	border-color: transparent transparent transparent #f5f5f5;
+}
+
 #four .wrapper {
+	z-index: 4;
     width: 100vw;
     height: 100vh;
     display: block;
