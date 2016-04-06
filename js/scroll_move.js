@@ -94,7 +94,7 @@ function main() {
         } else if (top >= height * 5 && top <= height * 7) {  // credit card
             var pos = top - height * 5;
             var toBe = map(pos, 0, height, 100, 0);
-            document.getElementById("six").style.left= "" + toBe + "%";
+            document.getElementById("six-wrapper").style.left= "" + toBe + "%";
         }
     };
 
