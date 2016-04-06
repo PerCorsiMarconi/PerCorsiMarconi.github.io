@@ -1,16 +1,19 @@
 #eight {
     display: flex;
     align-items: flex-center;
-    background-color: #69e;
+    background-color: #66b0ee;
 }
 
 #eight p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.1em;
     display: block;
     width: 20vw;
     text-align: justify;
     margin: auto 5vw;
     float: left;
-    color: #000;
+	color: #333;
 }
 
 #eight > #bank {
