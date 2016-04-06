@@ -24,6 +24,7 @@ function preventDefaultForScrollKeys(e) {
 
 
 function disableScroll() {
+  console.log("disableScroll");
   if (window.addEventListener) // older FF
       window.addEventListener('DOMMouseScroll', preventDefault, false);
   window.onwheel = preventDefault; // modern standard
@@ -66,7 +67,36 @@ function my_smoothScroll() {
     }});
 }
 
+function onYouTubeIframeAPIReady() {
+  //creates the player object
+  ik_player1 = new YT.Player('ik_player_iframe1');
+       
+  console.log('Video API is loaded');
+       
+  //subscribe to events
+  ik_player1.addEventListener("onReady",       "onYouTubePlayerReady");
+  ik_player1.addEventListener("onStateChange", "onYouTubePlayerStateChange");
+  
+  ik_player2 = new YT.Player('ik_player_iframe2');
+       
+  //subscribe to events
+  ik_player2.addEventListener("onReady",       "onYouTubePlayerReady");
+  ik_player2.addEventListener("onStateChange", "onYouTubePlayerStateChange");
+}
+
+function onYouTubePlayerReady() {
+  console.log('Video is ready to play');
+}
+
+function onYouTubePlayerStateChange(event) {
+  enableScroll();
+}
+
+
 function main() {
+	//Holds a reference to the YouTube player
+  var ik_player; 
+	
     console.log(window.innerHeight, window.innerHeight / 3);
     var doc = document.documentElement;
     var height = window.innerHeight;
