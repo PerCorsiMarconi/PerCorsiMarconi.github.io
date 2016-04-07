@@ -99,9 +99,6 @@ function onYouTubePlayerStateChange(event) {
 
 
 function main() {
-    if(mobileAndTabletCheck) {
-        alert("Questo sito funziona solo da computer e tu stai navigando da un telefono o tablet: puoi continuare, ma troverai probabilmente dei bug nella navigazione")
-    }
 	//Holds a reference to the YouTube player
   var ik_player; 
 	
