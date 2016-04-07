@@ -56,10 +56,10 @@
 }
 
 #bill > p {
-	font-family: Calligraffitti;
-	font-size: 20px;
+	font-family: "Varela Round";
+	font-size: 17px;
 	line-height: 1.2em;
-	color: #ddd;
+	color: #111;
     float: left;
     width: 85%;
     text-align: justify;
