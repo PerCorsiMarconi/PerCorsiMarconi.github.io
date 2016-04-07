@@ -90,6 +90,7 @@ function onYouTubePlayerReady() {
 
 function onYouTubePlayerStateChange(event) {
   enableScroll();
+  window.canAnimateScroll = true;
 }
 
 
