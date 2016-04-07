@@ -109,7 +109,7 @@ function main() {
         if (top >= height * 0 && top <= height * 1) { // planet
             var pos = top;
             var toBe = map(pos, 0, height, 0, 360);
-            document.getElementById("planet").style.transform = "rotate(" + toBe + "deg)";
+            document.getElementById("planet").style.transform = "translateX(-50%) translateY(-50%)" + "rotate(" + toBe + "deg)";
         } else if (top >= height * 1 && top <= height * 2) { //sheet
             var pos = top - height * 1;
             var toBe = map(pos, 0, height, 100, 20);
