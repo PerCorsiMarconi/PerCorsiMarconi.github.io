@@ -7,10 +7,10 @@
 }
 
 #wrapper-2 > div p {
-	font-family: "Indie Flower";
-	line-height: 1.1em;
+    font-family: "Indie Flower";
+    line-height: 1.1em;
     position: absolute;
-	font-size: 25px;
+    font-size: 1.25em;
     color: #555;
     
     width: 60%;
