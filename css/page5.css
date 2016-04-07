@@ -26,8 +26,8 @@
 }
 
 #wrapper-2 > div p {
-	color: #111;
-	line-height: 1.25em;
+    color: #111;
+    line-height: 1.25em;
     bottom: 4.5em;
 }
 
@@ -36,11 +36,11 @@
 }
 
 img.pig {
-	position: absolute;
+    position: absolute;
     left: 15%;
 
-    width: 70%;
-    /*height: 35%;*/
+    /* width: 70%; */
+    height: 45vh;
 
     margin: 0 auto;
 }
@@ -51,4 +51,14 @@ img.pig {
 
 #wrapper-2 > div:first-child > img.pig {
     bottom: 3em;
+}
+
+@media screen and (max-height : 600px) {
+    #wrapper-2 > div.left  p{
+	top: 2em;
+    }
+
+    #wrapper-2 > div p{
+	bottom: 2em;
+    }
 }
