@@ -2,7 +2,7 @@
     background-color: #B55EC6;
 }
 
-#one h1 {
+.fulltitle, #one h1 {
     font-family: "Amatic SC";
     text-align: center;
     font-size: 60px;

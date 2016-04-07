@@ -1,7 +1,51 @@
-#wrapper {
-	background-color: yellow;
+#wrapper, #wrapper * {
+    background-color: #B55EC6;
+    font-size: 25px;
+    font-family: "Indie Flower";
+}
+
+#wrapper h1 {
+    font-family: "Amatic SC";
+    text-align: center;
+    font-size: 60px;
+    padding: 0.3em;
+    margin-bottom: 0.7em;
 }
 
 #wrapper * {
-	color: #111;
+    color: #111;
+}
+
+#wrapper img {
+    width: 90%;
+    margin-left: 7%;
+    margin-right: 2em;
+    box-shadow: 0 0 13px black;
+}
+
+#wrapper > div {
+    width: 50%;
+    /* display: inline-block; */
+    float: left;
+}
+
+#wrapper p {
+    clear: both;
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+}
+
+#wrapper ul {
+    width: 80%;
+    margin: auto;
+}
+
+#wrapper li {
+    float: left;
+    padding: 0.8em;
+    margin: 0.1em;
+    background-color: #6fc65e;
+    border-radius: 0.3em;
+    box-shadow: 0 0 5px black;
 }
