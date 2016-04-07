@@ -3,7 +3,7 @@
 	height: 200vh;
     /* background-image: url(../assets/triangle.svg);
     background-size: 100vw; */
-	z-index: -200;
+	z-index: 0;
 }
 
 #four * {
@@ -11,6 +11,7 @@
 }
 
 #white-triangle {
+    z-index:100;
     display: none;
     height: 200vh;
     width: 66vw;
@@ -32,7 +33,6 @@
 }
 
 #four .wrapper {
-	z-index: 4;
     width: 100vw;
     height: 100vh;
     display: block;
@@ -125,10 +125,10 @@
 }*/
 
 #four #wrapper-1 p {
+    z-index: 200;
     font-family: "Indie Flower";
     line-height: 1.25em;
     font-size: 22px;
-
     color: #111;
     float: right;
     text-align: justify;

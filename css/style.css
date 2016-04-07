@@ -53,4 +53,6 @@ div.video h3 {
 .video {
     width: 30vw;
     height: 34vh;
+    z-index: 1000;
 }
+
